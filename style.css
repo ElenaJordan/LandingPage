@@ -52,3 +52,44 @@ a {
   display: flex;
   /*display flex here makes it so that the items in the unordered list in the navbar become flex items, making them appear in a row rather than stacked atop one another*/
 }
+
+.navbar ul li {
+  margin-left: 18px;
+}
+
+.header {
+  background: #1f2937;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+}
+
+.header .heroText {
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 1000;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #e4e7eb;
+  font-size: 18px;
+}
+
+.header img {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.header button {
+  background-color: #3882f6;
+  padding: 4px;
+}
+
+.boxblock {
+  /*do this next*/
+  background-color: fff;
+}
