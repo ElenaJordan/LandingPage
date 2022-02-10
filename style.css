@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* 640 x 426 */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style-type: none;
+  color: #f9faf8;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+.navbar {
+  background: #1f2937;
+  height: 60px;
+}
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  /*display flex here takes the 2 items inside of the container inside of the navbar and makes them flex items, then it justifies them to have equal space between them,
+  effectively putting them on opposite sides of the page. align items centre and height 100% make it so the flexboxes for the logo and ul take up the entirety of the nav bar,
+  then it algns them to be centred between the top and bottom*/
+}
+
+.navbar a {
+  color: #f9faf8;
+  text-decoration: none;
+  /*this sets every link (a) in the navbar appear as a certain colour and appear without decorations such as an underline*/
+}
+
+.navbar ul {
+  display: flex;
+  /*display flex here makes it so that the items in the unordered list in the navbar become flex items, making them appear in a row rather than stacked atop one another*/
+}
