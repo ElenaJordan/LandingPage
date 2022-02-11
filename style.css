@@ -2,26 +2,32 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
-/* 640 x 426 */
+
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
 }
+
 img {
   max-width: 100%;
 }
+
 ul {
   list-style-type: none;
   color: #f9faf8;
 }
+
 a {
   text-decoration: none;
 }
+
 .container {
   max-width: 1150px;
   margin: 0 auto;
   padding: 0 30px;
+  /*this sets the max width of every bit of content inside of a container to be 1150px across*/
 }
 .navbar {
   background: #1f2937;
@@ -54,7 +60,7 @@ a {
 }
 
 .navbar ul li {
-  margin-left: 18px;
+  margin-left: 26px;
 }
 
 .header {
@@ -64,6 +70,7 @@ a {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header .heroText {
@@ -77,19 +84,142 @@ a {
 .header p {
   color: #e4e7eb;
   font-size: 18px;
+  padding-bottom: 10px;
 }
 
 .header img {
   margin-top: 6%;
   margin-bottom: 6%;
+  max-height: 400px;
+  padding-left: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .header button {
   background-color: #3882f6;
-  padding: 4px;
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: #e4e7eb;
+  font-size: medium;
+  font-weight: bold;
+  border-color: transparent;
 }
 
-.boxblock {
+.boxBlock {
   /*do this next*/
   background-color: fff;
+}
+
+.boxBlock .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 100%;
+}
+
+.boxBlock .container .boxBlockTitle {
+  padding-bottom: 100px;
+}
+
+.boxBlock .container .boxBlockTitle h3 {
+  font-size: 36px;
+  font-weight: 1000;
+}
+
+.boxBlock .container .boxBlockBoxes {
+  display: flex;
+  justify-content: space-between;
+  /*this makes each picture and sentence combo sit next to each other with equal space between*/
+}
+
+.boxBlock .container .boxBlockBoxes .boxes {
+  display: flex;
+  flex-direction: column;
+  padding-left: 35px;
+  /*this puts each instance of text in the boxblock under each image, and pushes each set of text/images away from each other by 35px*/
+}
+
+.boxBlock .container .boxBlockBoxes p {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 18px;
+  color: #1f2937;
+}
+
+.boxBlock img {
+  border-radius: 8px;
+  border: 5px solid #3882f6;
+  /*this creates a 5px wide solid border around each image in the boxblock div with the specified colour and rounds the edges slightly*/
+}
+
+.quote {
+  background-color: #e4e7eb;
+}
+
+.quote .container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.quote .container .quoteSentence {
+  font-size: 36px;
+  font-style: italic;
+  padding-bottom: 15px;
+}
+
+.quote .container .customerName {
+  text-align: end;
+  font-weight: bold;
+}
+
+.callToAction .container {
+  background-color: #3882f6;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 50px;
+}
+
+.callToAction .container .callToActionText .ctaBold {
+  color: #f9faf8;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 22px;
+}
+
+.callToAction .container .callToActionText .ctaLower {
+  color: #e4e7eb;
+}
+
+.callToAction button {
+  background-color: #3882f6;
+  padding: 10px 24px;
+  border-radius: 8px;
+  color: #e4e7eb;
+  font-size: medium;
+  font-weight: bold;
+  border-color: #fff;
+}
+
+.footer {
+  background-color: #1f2937;
+}
+
+.footer .container {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  color: #e4e7eb;
+  font-size: 14px;
 }
